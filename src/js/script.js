@@ -4,7 +4,7 @@ function instancie(element) {
 }
 
 var input = instancie('#user')
-var button = instancie('.search')
+var button = instancie('.search-btn')
 var nome = instancie('.name')
 let name_error = instancie('.name-error')
 let name_user = instancie('.name-user')
