@@ -8,6 +8,7 @@ var button = instancie('.search')
 var nome = instancie('.name')
 let name_error = instancie('.name-error')
 let name_user = instancie('.name-user')
+let img_user = instancie('.image-user')
 var dados,user;
 
 
@@ -27,11 +28,6 @@ function PegarApi(url, nome) { //url da api e o dado que ira pesquisar
       
     }*/
 
-
-
-
-
-    console.log(response)
     return response.json()
 
   }).then(data => { //pega os dados em json e coloca na variavel dados
@@ -61,6 +57,7 @@ function imprime() { //funcao que imprimi os dados na tela
   }else{
     name_error.style.display = 'none'
     nome.innerHTML = dados.name
+    img_user.src = dados.avatar_url
     console.log(dados.name)
   }
 }
