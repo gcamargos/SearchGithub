@@ -10,6 +10,9 @@ let name_error = instancie('.name-error')
 let name_user = instancie('.name-user')
 let img_user = instancie('.image-user')
 var dados,user;
+let profile = instancie('.profile')
+let followers = instancie('.followers')
+let following = instancie('.following')
 
 
 
@@ -50,6 +53,9 @@ function iniciarApp(user) { //pega a api e o nome do usuario que quer pesquisar 
 
 function imprime() { //funcao que imprimi os dados na tela
   nome.innerHTML = ''
+  profile.innerHTML = ''
+  followers.innerHTML = ''
+  following.innerHTML = ''
 
   if(dados.name == undefined){
     name_error.style.display= 'block'
@@ -58,8 +64,12 @@ function imprime() { //funcao que imprimi os dados na tela
     name_error.style.display = 'none'
     nome.innerHTML = dados.name
     img_user.src = dados.avatar_url
-    console.log(dados.name)
+    profile.innerHTML = dados.html_url
+    profile.href = dados.html_url
+    followers.innerHTML = dados.followers
+    following.innerHTML = dados.following
   }
+
 }
 
 

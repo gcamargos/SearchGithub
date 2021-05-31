@@ -23,11 +23,24 @@ main {
   margin-top: 100px;
   width: 50%;
   margin: auto auto;
-  background-color: rgb(252, 251, 251);
+  background-color: #ffffff;
+
+  border: 1px dotted red;
+}
+
+.container-user {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.more-info {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 50px;
+  height: 100px;
 }
 
 .search {
@@ -39,12 +52,12 @@ main {
 
 #user {
   background-color: rgb(255, 255, 255);
-  color:rgb(79, 235, 216);
+  color: rgb(79, 235, 216);
   width: 50%;
   height: 35px;
   border-radius: 5px;
   font-size: 1.1rem;
-  border: 2px solid    rgb(79, 235, 216);
+  border: 2px solid rgb(79, 235, 216);
   padding: 10px;
 
 
