@@ -4,10 +4,12 @@
   margin: 0px;
   border: 0px;
 
+
 }
 
+
 body {
-  background-image: url('/src/img/background.svg');
+  background-image: url('/src/img/Subtle-Prism.svg');
   width: 100%;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -21,11 +23,12 @@ header {
 
 main {
   margin-top: 100px;
-  width: 50%;
+  width: 70%;
   margin: auto auto;
   background-color: #ffffff;
-
-  border: 1px dotted red;
+  padding: 2%;
+  border: 3px solid rgb(5, 126, 135);
+  border-radius: 1%;
 }
 
 .container-user {
@@ -33,6 +36,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 80px;
 }
 
 .more-info {
@@ -41,30 +45,70 @@ main {
   flex-direction: column;
   margin-top: 50px;
   height: 100px;
+  font-size: 1.1rem;
+  font-weight: 800;
 }
 
 .search {
   width: 100%;
   margin: 50px 0px 20px;
-  border-bottom: solid 2px red;
+  border-bottom: solid 2px rgb(2, 47, 99);
   padding: 15px;
+}
+
+.search-btn {
+  background: linear-gradient(to right, #44ffee 4%,
+      rgba(71, 51, 187, 0.727) 100%);
+  width: 152px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 600;
+  transition-duration: .9s;
+
+}
+
+.search-btn a {
+  outline: none;
+  text-decoration: none;
+  color: currentColor;
+}
+
+.search-btn:hover {
+  box-shadow: 5px 10px 20px aquamarine;
+  color: #aeffff;
+}
+
+.search-btn:active {
+  transition-duration: .3s;
+  position: relative;
+  top: 3px;
+
+
 }
 
 #user {
   background-color: rgb(255, 255, 255);
-  color: rgb(79, 235, 216);
-  width: 50%;
-  height: 35px;
-  border-radius: 5px;
+  color: rgb(2, 47, 99);
+  width: 60%;
+  height: 45px;
+  border-radius: 10px;
   font-size: 1.1rem;
-  border: 2px solid rgb(79, 235, 216);
+  border: 2px solid rgb(2, 47, 99);
   padding: 10px;
+  outline: none;
 
 
 }
 
 .name-user {
   text-align: center;
+  font-size: 1.3rem;
 }
 
 .div-image-user img {
@@ -73,14 +117,66 @@ main {
   border-radius: 50%;
 }
 
+.repositorios {
+  margin-top: 100px;
+}
+
+.repositorios h2 {
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -2vw;
+}
+
+.list li {
+  margin-bottom: 10px;
+  list-style: url(/src/img/star-solid.svg);
+  border-bottom: 1px solid rgb(4, 79, 106);
+
+  width: 100%;
+}
 
 
 
+.list li a,
+.profile {
+  font-size: 1.1rem;
+  outline: none;
+  text-decoration: none;
+  color: #0628af;
+  font-weight: 600;
+
+}
+
+.list li a:hover {
+  color: #0bd3c2;
+  transition-duration: .3s;
+}
 
 
+.footer {
+  width: 100%;
+  height: 100px;
+  margin-top: 100px;
+  background-color: rgb(255, 255, 255);
+  border-top: 1px solid rgb(169, 245, 250);
+}
 
 
+.footer-span {
+  height: 50px;
+}
 
+.footer-span div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  font-weight: 900;
+}
 
 
 .name-error {

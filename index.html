@@ -5,39 +5,57 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="stylesheet" href="src/css/style.css">
   <title>Seacrh GH</title>
 </head>
 
 <body>
   <header>
-    <h1>BUSCA DE RESPOSITORIOS</h1>
+    <h1>BUSCA DE DEV`S</h1>
   </header>
-  <main>
+  <main> 
+    
     <div class="search">
+ <h2 style="text-align: center;margin-bottom: 35px;">DIGITE O NOME DO DEV</h2>
       <input type="text" id="user" placeholder="NOME DO USUARIO">
-      <button class="search-btn" onclick="search()">Buscar</button>
+      <button class="search-btn" onclick="search()">
+       <a href="#ancor">Buscar</a> </button>
     </div>
 
-    <section class="container-user">
+    <section class="container-user" id="ancor">
       <div class="div-image-user">
-        <img class="image-user" src="/src/img/profile-default.png" alt="">
+        <img class="image-user" src="src/img/profile-default.png" alt="">
       </div>
       <div class="name-user">
-        <h3 class="name">GitHuber</h3>
+        <h3 class="name clear">GitHuber</h3>
         <h3 class="name-error">Usúario indisponivel</h3>
       </div>
     </section>
     <section class="more-info">
-      <div>perfil: <a class="profile" href="x"></a></div>
-      <div>seguidores: <span class="followers"></span></div>
-      <div>seguindo: <span class="following"></span></div>
+      <div>perfil: <a class="profile clear" href="x" target="_blank"></a></div>
+      <div>seguidores: <span class="followers clear"></span></div>
+      <div>seguindo: <span class="following clear"></span></div>
+      <div>repositorios públicos: <span class="repos_num clear"></span></div>
       
-      
+    </section>
+
+    <section class="repositorios">
+      <h2>Repositórios</h2>
+
+      <ul class="list"></ul>
+
     </section>
 
 
   </main>
+  <footer class="footer">
+    <div class="footer-span">
+      <div>
+        <span>©Copyright 2021</span>
+        <span>All Right Reserved</span>
+      </div>
+    </div>
+  </footer>
 
   <script src="src/js/script.js"></script>
 </body>
