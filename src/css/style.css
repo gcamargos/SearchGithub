@@ -9,7 +9,7 @@
 
 
 body {
-  background-image: url('/src/img/Subtle-Prism.svg');
+  background-image: url('../img/Subtle-Prism.svg');
   width: 100%;
   font-family: 'Courier New', Courier, monospace;
 }
