@@ -29,6 +29,7 @@ main {
   padding: 2%;
   border: 3px solid rgb(5, 126, 135);
   border-radius: 1%;
+
 }
 
 .container-user {
@@ -111,7 +112,7 @@ main {
   font-size: 1.3rem;
 }
 
-.div-image-user img {
+img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -126,8 +127,6 @@ main {
 }
 
 .list {
-  display: flex;
-  flex-wrap: wrap;
   margin-left: -2vw;
 }
 
@@ -181,4 +180,59 @@ main {
 
 .name-error {
   display: none;
+}
+
+@media(max-width:720px) {
+  main {
+    width: auto;
+    overflow-x: scroll;
+  }
+
+  .repositorios {
+    width: 100%;
+  }
+
+  .list {
+    width: 100%;
+  }
+
+  .search {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #user {
+    width: 100%;
+  }
+
+  .search-btn {
+    margin-top: 10px;
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+
+@media(max-width:500px) {
+
+  img {
+    width: 70% !important;
+    margin: 0 auto;
+    height: auto !important;
+  }
+
+  main {
+    width: 99%;
+  }
+
+}
+
+::placeholder {
+  color: rgba(107, 163, 163, 0.44);
+}
+
+@media(max-width:370px) {
+  .footer-span div {
+    display: flex;
+    flex-direction: column;
+  }
 }
